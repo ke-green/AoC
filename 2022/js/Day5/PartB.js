@@ -39,17 +39,21 @@ const { open } = require('node:fs/promises');
             }
         }
         else if (line.substring(0, 1) == 'm') {
-            //console.log('moving...');
+
             let instructions = line.split(' ');
             let move_cnt = instructions[1];
             let move_from = instructions[3];
             let move_to = instructions[5];
-            //console.log(`move ${move_cnt}, ${move_from}, ${move_to}`);
+            let containers_to_move = [];
             for (i = 1; i <= parseInt(move_cnt); i++) {
               let container = stacks[move_from - 1].pop();
-              stacks[move_to - 1].push(container);
+              containers_to_move.push(container);
             }
-
+            containers_to_move.reverse();
+            for (i = 0; i < containers_to_move.length; i++) {
+                stacks[move_to - 1].push(containers_to_move[i]);
+            }
+                        
         }
 
         l++;
