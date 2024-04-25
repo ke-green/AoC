@@ -1,27 +1,5 @@
 
 
-/*
-
-let a = ['a', 'b', 'c'];
-let b = Array.from(a);
-
-console.log(a);
-console.log(b);
-console.log(b.slice(0, b.length - 1));
-
-return;
-
-*/
-
-
-/*
-let aa = '/'.split('/');
-console.log(`${aa}; ${aa.length}`);
-a = '/brdsppd'.split('/');
-console.log(`${a}; ${a.length}`);
-
-return;
-*/
 
 const { open } = require('node:fs/promises');
 
