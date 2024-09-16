@@ -4,4 +4,4 @@ This is just me having fun part-time trying to become better at JavaScript and l
 
 My goal is to solve all the puzzles without getting help (cheating!). My free time is few and far between, so I ruled out getting them done quickly from the start!
 
-EDIT: I neeeded to get some help on question 11 / part B :(
+EDIT: I neeeded to get some help on puzzle 11 / part B :(
